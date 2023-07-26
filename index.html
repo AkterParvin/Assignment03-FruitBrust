@@ -48,7 +48,7 @@
 
 <body class="font-[font-lato]">
 
-    <header class="max-w-screen-xl mx-auto px-4 md:px-5 lg:px-7 py-5 my lg:my-10 bg-white">
+    <header class="max-w-screen-xl mx-auto px-4 md:px-5 lg:px-7 py-5 lg:my-10 bg-white">
         <!-- nav-bar part  -->
         <nav>
             <div class=" lg:bg-common-pink rounded-full py-6 px-8">
@@ -113,17 +113,17 @@
             </div>
         </nav>
         <!-- banner part starts here  -->
-        <div>
-            <div class="lg:my-12">
+        <div class="relative">
+            <div class="lg:my-12 ">
                 <div class="carousel w-full">
                     <div id="slide1" class="carousel-item relative w-full">
                         <img src="images/banner1.png" class="w-full h-[33vh] md:h-[70vh] lg:h-[82vh] rounded-xl " />
                         <div
-                            class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-title-color to-[#12121200] overflow-hidden rounded-xl">
+                            class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-title-color to-[#12121200] overflow-hidden rounded-xl z-10">
                         </div>
 
                         <div
-                            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-1 lg:right-11 top-1/2 z-50">
+                            class="absolute flex justify-between transform -translate-y-1/2 left-5 right-1 lg:right-11 top-1/2 z-30">
                             <a href="#slide4" class="btn-circle bg-transparent outline-none">
                                 <i
                                     class="fa-solid fa-angle-left rounded-full  px-2 md:px-3  md:py-1 bg-title-color text-xl lg:text-3xl lg:ml-6 text-white "></i>
@@ -136,14 +136,14 @@
                         </div>
 
                         <div
-                            class="absolute  text-white  text-center top-0 left-0 w-full h-full justify-center items-start pt-5 lg:pt-8 z-10 ">
+                            class="absolute  text-white  text-center top-0 left-0 w-full h-full justify-center items-start pt-5 lg:pt-8 z-20 ">
                             <h1 class="text-xl md:text-5xl lg:text-7xl font-extrabold md:py-5">Exotic tastes at your
                                 <br> doorstep
                             </h1>
                             <p class="text-[14px] md:text-sm font-normal lg:font-medium py-2  md:py-3">We supply highly
                                 quality organic products</p>
                             <button
-                                class="bg-common-pink px-4 md:px-7  py-2  md:py-4 text-white font-bold text-lg md:mt-20 lg:mt-24 rounded-lg">Shop
+                                class="bg-common-pink px-4 md:px-7  py-2  md:py-4 text-white font-bold text-lg md:mt-20 lg:mt-10 rounded-lg">Shop
                                 Now</button>
                         </div>
                     </div>
@@ -163,7 +163,7 @@
 
                             <a href="#slide3" class="btn-circle bg-transparent outline-none">
                                 <i
-                                    class="fa-solid fa-angle-right rounded-full px-2 md:px-3  md:py-1 bg-title-color text-xl lg:text-3xl lg:mr-  text-white "></i>
+                                    class="fa-solid fa-angle-right rounded-full px-2 md:px-3  md:py-1 bg-title-color text-xl lg:text-3xl  text-white "></i>
                             </a>
                         </div>
 
@@ -175,7 +175,7 @@
                             <p class="text-[14px] md:text-sm font-normal lg:font-medium py-2  md:py-3">We supply highly
                                 quality organic products</p>
                             <button
-                                class="bg-common-pink px-4 md:px-7  py-2  md:py-4 text-white font-bold text-lg md:mt-20 lg:mt-24 rounded-lg">Shop
+                                class="bg-common-pink px-4 md:px-7  py-2  md:py-4 text-white font-bold text-lg md:mt-20 lg:mt-10  rounded-lg">Shop
                                 Now</button>
                         </div>
                     </div>
@@ -207,10 +207,11 @@
                             <p class="text-[14px] md:text-sm font-normal lg:font-medium py-2  md:py-3">We supply highly
                                 quality organic products</p>
                             <button
-                                class="bg-common-pink px-4 md:px-7  py-2  md:py-4 text-white font-bold text-lg md:mt-20 lg:mt-24 rounded-lg">Shop
+                                class="bg-common-pink px-4 md:px-7  py-2  md:py-4 text-white font-bold text-lg md:mt-20 lg:mt-10 rounded-lg">Shop
                                 Now</button>
                         </div>
                     </div>
+
                     <div id="slide4" class="carousel-item relative w-full">
                         <img src="images/banner4.png" class="w-full h-[33vh] md:h-[70vh] lg:h-[82vh] rounded-xl " />
                         <div
@@ -238,7 +239,7 @@
                             <p class="text-[14px] md:text-sm font-normal lg:font-medium py-2  md:py-3">We supply highly
                                 quality organic products</p>
                             <button
-                                class="bg-common-pink px-4 md:px-7  py-2  md:py-4 text-white font-bold text-lg md:mt-20 lg:mt-24 rounded-lg">Shop
+                                class="bg-common-pink px-4 md:px-7  py-2  md:py-4 text-white font-bold text-lg md:mt-20 lg:mt-10  rounded-lg">Shop
                                 Now</button>
                         </div>
                     </div>
@@ -246,21 +247,88 @@
 
             </div>
 
-            
+            <!-- image block  -->
 
-            <div>
+            <div class="z-50 hidden lg:flex justify-around items-center gap-12 px-5 py-5 w-[85%] mx-auto bg-gray-200 rounded-lg shadow-lg shadow-[#0000000D] absolute -bottom-28 right-[92px]">
+
+                <div class="flex-1">
+                    <img src="images/fruit1.png" alt="" class="w-32 h-24">
+                    <p class="text-title-color text-center text-xl font-medium">Rasberry</p>
+                </div>
+                <div class="flex-1">
+                    <img src="images/fruit2.png" alt="" class="w-32 h-24">
+                    <p class="text-title-color text-center text-xl font-medium">Orange</p>
+                </div>
+                <div class="flex-1">
+                    <img src="images/fruit3.png" alt="" class="w-32 h-24">
+                    <p class="text-title-color text-center text-xl font-medium">Mango</p>
+                </div>
+                <div class="flex-1">
+                    <img src="images/fruit4.png" alt="" class="w-32 h-24">
+                    <p class="text-title-color text-center text-xl font-medium">Strawberry</p>
+                </div>
+                <div class="flex-1">
+                    <img src="images/fruit5.png" alt="" class="w-32 h-24">
+                    <p class="text-title-color text-center text-xl font-medium">Pomegranate</p>
+                </div>
 
             </div>
-
-
-
         </div>
 
     </header>
 
-
-
     <main>
+        <!-- Deal of the day section  -->
+
+       
+        <section class="max-w-screen-xl mx-auto px-4 md:px-5 lg:px-7 py-5 lg:my-10 bg-white">
+            
+            <!-- text & static clock part  -->
+            <div class="flex justify-between items-center flex-col md:flex-row px-3 lg:px-2 lg:py-20 text-center lg:text-left">
+                
+                <!-- Text  -->
+                <div class="md:mr-28">
+                    <h2 class=" md:text-2xl lg:text-5xl font-black text-title-color">Deal of the day</h2>
+                    <p class="text-sm lg:text-base font-medium text-title-color mt-6 ">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature
+                        from 45 BC,
+                        making it over 2000 years old.</p>
+            
+                </div>
+              <!-- Static clock  -->
+                <div class="flex justify-center items-center flex-1 my-5 ">
+                    <div class="flex justify-start items-center gap-4">
+                        <span class="text-center">
+                            <h2 class="text-lg md:text-2xl lg:text-5xl font-black py-1 md:py-2">29</h2>
+                            <p class="text-[9px] lg:text-base font-medium">Days</p>
+                        </span>
+
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+
+                        <span class="text-center">
+                            <h2 class="text-lg md:text-2xl lg:text-5xl font-black text-title-color py-1 md:py-2">15</h2>
+                            <p class="text-[9px] lg:text-base font-bold text-para-color">Hours</p>
+                        </span>
+
+                        <i class="fa-solid fa-ellipsis-vertical "></i>
+
+                        <span class="text-center">
+                            <h2 class="text-lg md:text-2xl lg:text-5xl font-black text-title-color py-1 md:py-2">25</h2>
+                            <p class="text-[9px] lg:text-base font-bold text-para-color">Minutes</p>
+                        </span>
+
+                        <i class="fa-solid fa-ellipsis-vertical "></i>
+
+                        <span class="text-center">
+                            <h2 class="text-lg md:text-2xl lg:text-5xl font-black text-title-color py-1 md:py-2">08</h2>
+                            <p class="text-[9px] lg:text-base font-bold text-para-color">Seconds</p>
+                        </span>
+
+                    </div>
+            
+                    
+                </div>
+            </div>
+        </section>
 
 
 
